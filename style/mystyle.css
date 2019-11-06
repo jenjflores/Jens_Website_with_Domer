@@ -1,0 +1,381 @@
+
+* {
+	box-sizing: border-box;
+	
+}
+.bg {
+	
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+body {
+	margin: 0;
+	/* The image used */
+	/*	background-image: url("/image/bambooBG.jpg"); */
+	
+	
+}
+/* ================================= 
+Navigation
+==================================== */
+
+.header {
+	padding-top: .5em;
+	padding-bottom: .5em;
+	border: 1px solid #a2a2a2;
+	background-color: #f4f4f4;
+	-webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background-color: black; /* added background */
+}
+
+nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+
+h2,h3,a {
+	color: #34495e;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+.logo {
+	margin: 0;
+  font-size: 1.45em;
+  font-family: fantasy, cursive, serif;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+.logo a, .main-nav a {
+	padding: 10px 15px;
+	text-transform: uppercase;
+	text-align: center;
+	display: block;
+}
+
+.main-nav a {
+	color: #34495e;
+	font-size: .99em;
+}
+
+.main-nav a:hover {
+	color: #718daa;
+}
+
+/* ================================= 
+Main
+==================================== */
+
+
+#App {
+	flex-direction: column;
+	min-height: 100vh;
+	/*line-height: 1.6; */
+	
+}
+main {
+	flex: 1;
+	padding: 15px;
+	background-image: url("/image/bgResto.jpg");	/*Background for every page*/
+	/*background-size: 100% 100%; */
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	background-size:cover;
+
+}
+
+.center-text {
+	color:black;
+	text-align: center;
+	text-decoration: lightsalmon;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	font-weight: 900;
+	font-size: large;
+
+}
+.center-text.p {
+	font-style: oblique;
+}
+
+article{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	/*border: 1px solid gray; /*This is the line border*/
+	padding-top: 10px;
+	text-align: center;
+
+}
+
+#flex-box {
+	display: flex;
+
+}
+
+div.flex-box{
+	width: 45%;
+}
+
+  /*id use to different section & aside*/
+
+
+
+
+/* ================================= 
+  Footer
+==================================== */
+footer p {
+	background-color: thistle;
+	padding: 15px;
+	text-align: center;
+	color: black;
+}
+
+/* ================================= 
+  Login/Form
+==================================== */
+.center-me {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div.login-box{
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+	display: flex;
+	padding: 70px 30px;
+	justify-content:center; /* controls the avatar position */	
+	flex-direction: column;
+	align-items: center;	/*items: avatar follows the box */
+	align-self: center;
+	max-width: 25%;
+
+}
+.avatar{
+	width: 100px;
+	position: absolute;
+	border-radius: 50%;
+	top: 210px;	/* where the avator position from the top*/
+}
+
+
+h1,a{
+    margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+	
+
+}
+.login-box p{
+    margin: 0;
+    padding: 0;
+	font-weight: bold;
+	align-items: center; /**/
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.login-box input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.login-box input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.login-box input[type="button"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+    color: #000;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 14px;
+	color: #fff;
+	
+}
+
+.login-box a:hover
+{
+    color: #3fd47b;
+}
+a{
+	text-align: center;
+}
+
+/* ================================= 
+  Booking Form
+==================================== */
+
+#booking {
+	width: 50%;
+	
+  }
+
+#showbooking {
+	width:50%;
+}
+aside {
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	height: 100vh;
+}
+
+.border {
+	padding-right: 1em;
+	margin-right: 1px;
+	border-right: 1px dashed rgb(24, 12, 23);
+}
+
+hr {
+	background-color:  rgb(27, 13, 13);
+	color: rgb(17, 4, 4);
+	clear: both;
+	float:none;
+	width: 100%;
+	height: 1px;
+	margin: 1em 0;
+	border: none;
+}
+/*Add common padding to main content block*/
+section.content {
+	padding: 1em 0;
+	margin-bottom: auto;
+	margin-left: auto;
+	margin-right: auto;
+	width: 950px;
+	overflow: auto;	
+}
+
+.booking-box input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #1c8adb;
+    color: rgb(13, 19, 15);
+    font-size: 18px;
+	border-radius: 100px;
+	width: 100%;
+
+}
+.booking-box input[type="button"]:hover
+{
+    cursor: pointer;
+    background: #39dc79;
+	color: #000;
+	width: 100%;
+	margin-bottom: 20px;
+
+}
+
+.booking-box{
+	display: flex;
+	padding: 70px 30px;
+	justify-content:center; /* controls the avatar position */	
+	flex-direction: column;
+	align-items: center;	/*items: avatar follows the box */
+	align-self: center;
+	max-width: 100%;
+
+}
+.border h1,label {
+	color: rgb(255, 255, 255);
+}
+
+
+#showbooking {
+	align-items: center;	/*items: avatar follows the box */
+	align-self: center;
+	justify-content:center;
+}
+aside#showbooking h2,p,h4{
+	text-transform: uppercase;
+	color: white;
+	text-align: center;
+}
+
+table, td {
+
+	border-collapse: collapse;
+
+  }
+td {
+	padding: 20px;
+	color: white;
+	
+  }
+  table.t01 {
+	width: 100%;    
+	background-color: transparent;
+  }
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+@media (min-width: 769px) {
+	.header,
+	.main-nav {
+		display: flex;
+	}
+	.header {
+		flex-direction: column;
+		align-items: center;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	.header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
+
+@media print{
+	.hidden-print{display:none!important}
+}
+
+
+
+
